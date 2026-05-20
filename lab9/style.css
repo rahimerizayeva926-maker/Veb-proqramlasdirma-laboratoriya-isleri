@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: purple;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.ust_menyu {
+ background-color: black;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+ font-weight: bold;
+    color: white;
+}
+
+.nav_links a {
+    color: darkgray;
+    text-decoration: none;
+margin-left: 20px;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav_links a:hover, .nav_links a.aktiv {
+    color: purple;
+}
+
+.navbar {
+    background-color: black;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: purple;
+}
+
+.container {
+    padding: 40px 10%;
+    flex-grow: 1;
+}
+
+.about-page {
+    max-width: 1080px;
+    margin: 0 auto;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mission-box,
+.story-box {
+    background: #2c2c2c;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.section-title {
+    margin: 40px 0 20px;
+    font-size: 1.9rem;
+}
+
+.values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.value-card,
+.stat-card {
+    padding: 25px;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #dddddd;
+    margin-bottom: 30px;
+}
+
+.categories-grid,
+.top-trend-grid,
+.articles-grid,
+.values-grid,
+.stats-grid,
+.contact-info-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.categories-grid,
+.top-trend-grid,
+.articles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.values-grid,
+.stats-grid,
+.contact-info-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.category-card,
+.card,
+.value-card,
+.info-card,
+.stat-card {
+    background: #2c2c2c;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.category-card {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-2px);
+}
+
+.cat-icon,
+.val-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.card-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.card-content h3 {
+    margin-bottom: 12px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.contact-page .contact-form-box {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-box {
+    background: #2c2c2c;
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cta-box h2 {
+    margin-bottom: 15px;
+}
+
+.cta-box p {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.esas_hisse {
+    padding: 40px 10%;
+    flex-grow: 1;
+}
+
+.sahife_basligi {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.axtaris_qutusu {
+    margin-bottom: 20px;
+}
+
+#axtar_alan {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+    outline: none;
+}
+
+.kateqoriya_kartlari {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.kateqoriya_btn {
+    background-color: darkgray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.kateqoriya_btn:hover, .kateqoriya_btn.aktiv {
+    background-color: purple;
+}
+
+.netice_sayi {
+    font-size: 0.9rem;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+
+.meqale_qutulari {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.bos_klass {
+    background: red;
+}
+
+.deneme {
+    display: block;
+}
+
+.meqale_qutusu {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.meqale_sekil {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.yazi-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.yazi-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.yazi-box p {
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.yazi_meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.oxu_duymesi {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+.oxu_duymesi:hover {
+    background-color: darkmagenta;
+}
+
+.read-btn,
+.category-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.category-btn {
+    background-color: darkgray;
+}
+
+.read-btn:hover,
+.category-btn:hover {
+    background-color: darkmagenta;
+}
+
+.primary-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.primary-btn:hover {
+    background-color: darkmagenta;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact-form-box {
+    background-color: #3a3a3a;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form-box h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+}
+
+.footer {
+    background-color: black;
+    padding: 40px 50px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-section p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-section.links a {
+    display: block;
+    color: purple;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    color: #888888;
+    font-size: 0.85rem;
+}
+
+.article-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.article-modal.open {
+    display: flex;
+}
+
+.article-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.article-modal-content {
+    position: relative;
+    max-width: 700px;
+    width: 90%;
+    background-color: #1d1d1d;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    color: white;
+    z-index: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal-meta {
+    margin: 10px 0 20px;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.modal-body {
+    line-height: 1.8;
+    color: #e5e5e5;
+    white-space: pre-line;
+}
+
+@media (max-width: 900px) {
+    .meqale_qutulari {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .ust_menyu {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
